@@ -1,4 +1,4 @@
 package com.sicnu.service;
 
-public class user {
+public class StudentService {
 }

@@ -1,6 +1,6 @@
 package com.sicnu.exception;
 
-import com.sicnu.pojo.responseResult;
+import com.sicnu.pojo.ResponseResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(Exception.class)
-    public responseResult globalExceptionHandler(Exception ex) {
+    public ResponseResult globalExceptionHandler(Exception ex) {
         log.error("全局异常：" + ex);
-        return responseResult.error();
+        return ResponseResult.error();
     }
 }
